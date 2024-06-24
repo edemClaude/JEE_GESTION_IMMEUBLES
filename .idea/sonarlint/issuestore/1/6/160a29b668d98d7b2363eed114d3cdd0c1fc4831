@@ -1,5 +1,9 @@
 
 Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ŠÏÜ†8¯Ï°Ğ„2J$82950751-9ac2-4c79-af84-fd26e815ea60
+java:S1186$"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ŠÏÜ†8õª€Ô„2J$a2f8583c-9051-4ac1-8c39-13a27c6bab59
+‡
+java:S1854"?Remove this useless assignment to local variable "transaction".(ğòşúÿÿÿÿ8üª€Ô„2J$35d9ceaa-cb67-4019-9d77-87b859285b46
+x
+java:S1481"0Remove this unused "transaction" local variable.(ğòşúÿÿÿÿ8«€Ô„2J$6775431e-e56b-47d3-a5a3-463e6463468c
 ˜
-java:S1989"PHandle the following exception that could be thrown by "getWriter": IOException.(ïô†úÿÿÿÿ8ÓÏ°Ğ„2J$4cc37011-6e8d-4494-aa2f-ab4b8d557988
+java:S1989"PHandle the following exception that could be thrown by "getWriter": IOException.(ïô†úÿÿÿÿ8‚«€Ô„2J$23a38bf2-e5ee-4c45-9ba1-8f29d3980b43
