@@ -1,0 +1,16 @@
+
+‘
+java:S11921"IDefine a constant instead of duplicating this literal "password" 3 times.(…ˆíİşÿÿÿÿ8Äúµ³…2J$e34122f5-a4b8-4d5b-99e2-2d00c7be7c20
+‘
+java:S11920"IDefine a constant instead of duplicating this literal "username" 4 times.(éœë¾øÿÿÿÿ8Äúµ³…2J$1c5fb49f-4414-40cb-90df-5f866335715a
+m	java:S106"+Replace this use of System.out by a logger.(·Š´8ÿúµ³…2J$a689fbaa-55fb-473d-9c99-14879cb29d4c
+¢
+java:S1989!"_Handle the following exceptions that could be thrown by "login": ServletException, IOException.(£ŸğÊ8ûµ³…2J$5d55a186-514a-435b-b7f6-b740eb653ce2
+ª
+java:S1989#"bHandle the following exceptions that could be thrown by "register": ServletException, IOException.(ß®…úÿÿÿÿ8„ûµ³…2J$e087b0e5-84a3-4bf0-81cd-4c48f7456cb8
+£
+java:S1989%"`Handle the following exceptions that could be thrown by "logout": ServletException, IOException.(ˆÁ¹Â8†ûµ³…2J$2d79a8e9-e62d-47e5-bd1a-4eed27b226fe
+¢
+java:S1989,"_Handle the following exceptions that could be thrown by "doGet": ServletException, IOException.(ï¶ßû8Šûµ³…2J$1ccb2292-147b-4c67-92ef-fa5654aabcdc
+Œ
+java:S1128"DRemove this unused import 'dev.sn.gestionimmeubles.entities.Lodger'.(¤”™¦şÿÿÿÿ8›ûµ³…2J$28bcc05b-52f3-4b4b-a5e5-c052c04e578e

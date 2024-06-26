@@ -1,6 +1,10 @@
 package dev.sn.gestionimmeubles.entities;
 
 import jakarta.persistence.Entity;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
-public class Lodger extends Person { }
+@Data
+public class Lodger extends Person {}

@@ -1,9 +1,9 @@
 package dev.sn.gestionimmeubles.entities;
 
 import jakarta.persistence.*;
-import lombok.experimental.Accessors;
+import lombok.Data;
 
-@Accessors
+@Data
 @Entity
 public class UniteLocation {
 

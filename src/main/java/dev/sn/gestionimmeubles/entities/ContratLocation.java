@@ -1,11 +1,11 @@
 package dev.sn.gestionimmeubles.entities;
 
 import jakarta.persistence.*;
-import lombok.experimental.Accessors;
+import lombok.Data;
 
 
 @Entity
-@Accessors
+@Data
 @Table(name = "contrat_location")
 public class ContratLocation {
 

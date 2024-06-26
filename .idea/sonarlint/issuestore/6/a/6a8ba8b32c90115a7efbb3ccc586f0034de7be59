@@ -1,0 +1,17 @@
+
+
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Çµí‘8ıÑ´…2
+c
+java:S1128"FRemove this unused import 'dev.sn.gestionimmeubles.dao.IRegistration'.(åäş»8ıÑ´…2
+k
+java:S1128"IRemove this unused import 'dev.sn.gestionimmeubles.dao.RegistrationImpl'.(Êû®Îüÿÿÿÿ8‘ıÑ´…2
+d
+java:S1128"BRemove this unused import 'dev.sn.gestionimmeubles.entities.User'.(‘“«©şÿÿÿÿ8‘ıÑ´…2
+`
+java:S1128">Remove this unused import 'jakarta.persistence.EntityManager'.(·ïŸéúÿÿÿÿ8’ıÑ´…2
+g
+java:S1128"ERemove this unused import 'jakarta.persistence.EntityManagerFactory'.(‹ ñºûÿÿÿÿ8’ıÑ´…2
+d
+java:S1128"BRemove this unused import 'jakarta.persistence.EntityTransaction'.(¡«Ä×üÿÿÿÿ8’ıÑ´…2
+^
+java:S1128	"<Remove this unused import 'jakarta.persistence.Persistence'.(ŸÖ¦µÿÿÿÿÿ8’ıÑ´…2

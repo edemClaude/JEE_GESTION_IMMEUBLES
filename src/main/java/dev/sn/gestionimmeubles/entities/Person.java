@@ -1,29 +1,34 @@
 package dev.sn.gestionimmeubles.entities;
 
-
 import jakarta.persistence.*;
-import lombok.experimental.Accessors;
+import lombok.Data;
 
 @Entity
-@Accessors
+@Data
 @Table(name = "person")
 public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
-    private int id;
+    protected int id;
 
     @Column(name = "first_name")
-    private String firstName;
+    protected String firstName;
 
     @Column(name = "last_name")
-    private String lastName;
+    protected String lastName;
 
     @Column(name = "phone_number")
-    private String phoneNumber;
+    protected String phoneNumber;
 
     @Column(name = "address")
-    private String address;
+    protected String address;
+
+    @Column(name = "username")
+    private String username;
+
+    @Column(name = "password")
+    private String password;
 
 
 }

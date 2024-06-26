@@ -1,10 +1,10 @@
 package dev.sn.gestionimmeubles.entities;
 
 import jakarta.persistence.*;
-import lombok.experimental.Accessors;
+import lombok.Data;
 
 @Entity
-@Accessors
+@Data
 @Table(name = "paiements")
 public class Paiement {
     @Id
