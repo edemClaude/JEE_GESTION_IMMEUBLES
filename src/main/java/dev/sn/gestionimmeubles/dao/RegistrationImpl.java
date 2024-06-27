@@ -15,13 +15,13 @@ public class RegistrationImpl implements IRegistration {
     public boolean login(String username, String password) {
         try{
             transaction.begin();
-            TypedQuery<User> query = manager.createQuery(
-                    "SELECT u FROM User u WHERE u.username = :username AND u.password = :password", User.class);
+            TypedQuery<Person> query = manager.createQuery(
+                    "SELECT p FROM Person p WHERE p.username = :username AND p.password = :password", Person.class);
             query.setParameter("username", username);
             query.setParameter("password", password);
-            User user = query.getSingleResult();
+            Person person = query.getSingleResult();
             transaction.commit();
-            return user != null;
+            return person != null;
         }catch (NoResultException e){
             transaction.rollback();
             return false;

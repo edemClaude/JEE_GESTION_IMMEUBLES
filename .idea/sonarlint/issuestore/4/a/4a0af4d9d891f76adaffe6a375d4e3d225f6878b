@@ -1,5 +1,18 @@
 
-
-java:S1130"KRemove the redundant 'java.io.IOException' thrown exception declaration(s).(ÛÍ©x8ÄÖ±©…2J$2290d94d-8050-4092-bb6f-ea72ff6f9847
+’
+java:S1192,"JDefine a constant instead of duplicating this literal "immeubles" 3 times.(®Êüÿıÿÿÿÿ8÷«×Ğ…2J$c42834e8-800a-49b0-99a3-3cdc8a764cb9
+›
+java:S1192-"YDefine a constant instead of duplicating this literal "pages/immeubles/list.jsp" 3 times.(Şş˜d8ø«×Ğ…2J$5eaed7ec-c092-4a89-adf3-d342cd9424f7
+®
+java:S1989%"kHandle the following exceptions that could be thrown by "redirectToAddForm": ServletException, IOException.(ß‹×8¶¬×Ğ…2J$711904ce-83fc-4a31-953d-15333d88d410
+¯
+java:S1989("gHandle the following exceptions that could be thrown by "storeImmeuble": ServletException, IOException.(·„ÛĞıÿÿÿÿ8·¬×Ğ…2J$aec69b86-f70e-404b-8667-60cfad6874e1
 £
-java:S1989"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(éìÕ8ÉÖ±©…2J$66dd09a4-42a1-41b4-ac6b-9bcdb1fd7231
+java:S1989-"aHandle the following exceptions that could be thrown by "forward": ServletException, IOException.(Şş˜d8¹¬×Ğ…2J$6decad63-ed00-4c22-93c0-eaeffb31e768
+°
+java:S19890"hHandle the following exceptions that could be thrown by "deleteImmeuble": ServletException, IOException.(®Ö ›ÿÿÿÿÿ8º¬×Ğ…2J$c123bafe-ad4d-496b-b61e-40d96b94d789
+±
+java:S19893"nHandle the following exceptions that could be thrown by "displayImmeublesList": ServletException, IOException.(Í‚Ôà8¼¬×Ğ…2J$02aac2a7-a63c-466d-8cac-e41d28aa5169
+§
+java:S1989:"_Handle the following exceptions that could be thrown by "doGet": ServletException, IOException.(—ôÖ¢øÿÿÿÿ8¾¬×Ğ…2J$79e633c5-af3c-4aec-a76b-4454825e86ac
+r	java:S106B"+Replace this use of System.out by a logger.(úõ–áùÿÿÿÿ8Â¬×Ğ…2J$7317bfae-489b-4b64-a8c1-cd04bba01ce6

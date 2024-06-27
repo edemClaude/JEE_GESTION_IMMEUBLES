@@ -1,8 +1,11 @@
 package dev.sn.gestionimmeubles.dao;
 
 import dev.sn.gestionimmeubles.entities.Immeuble;
+import dev.sn.gestionimmeubles.entities.Owner;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -14,51 +17,63 @@ public class ImmeubleImpl implements IImmeuble {
 
     Logger logger = Logger.getLogger(ImmeubleImpl.class.getName());
     @Override
-    public void addImmeuble(Immeuble immeuble) {
+    public boolean addImmeuble(Immeuble immeuble) {
         try{
             transaction.begin();
             manager.persist(immeuble);
             transaction.commit();
+            return true;
         }catch(Exception e){
             logger.info("Error while adding immeuble : " + e.getMessage());
             transaction.rollback();
+            return false;
         }
     }
 
     @Override
-    public void deleteImmeuble(int id) {
+    public boolean deleteImmeuble(int id) {
         try{
             transaction.begin();
             Immeuble immeuble = manager.find(Immeuble.class, id);
             manager.remove(immeuble);
             transaction.commit();
+            return true;
         }catch(Exception e){
             logger.info("Error while deleting immeuble : " + e.getMessage());
             transaction.rollback();
+            return false;
         }
     }
 
     @Override
-    public void updateImmeuble(int id, Immeuble immeuble) {
+    public boolean updateImmeuble(int id, Immeuble immeuble) {
         try{
             transaction.begin();
             immeuble.setId(id);
             manager.merge(immeuble);
             transaction.commit();
+            return true;
         } catch(Exception e){
             logger.info("Error while updating immeuble : " + e.getMessage());
             transaction.rollback();
+            return false;
         }
     }
 
     @Override
-    public List<Immeuble> getAllImmeuble() {
+    public List<Immeuble> getAllImmeubleByMC(String key) {
         try {
+            List<Immeuble> immeubles = new ArrayList<>();
             TypedQuery<Immeuble> query = manager.createNamedQuery("getAll", Immeuble.class);
-            return query.getResultList();
+
+            for (Immeuble i: query.getResultList()) {
+                i.setOwner(manager.find(Owner.class, i.getId()));
+                immeubles.add(i);
+            }
+            return immeubles;
         } catch (Exception e) {
             logger.info("Error while getting all immeubles : " + e.getMessage());
-            return null;
+            return Collections.emptyList();
         }
     }
 

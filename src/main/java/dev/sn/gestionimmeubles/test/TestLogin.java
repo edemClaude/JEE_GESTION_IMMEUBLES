@@ -16,6 +16,7 @@ public class TestLogin {
         user.setPhoneNumber("77 777 77 77");
         user.setFirstName("Claude");
         user.setLastName("KUMAZA");
+        user.setRole("User");
         user.setPassword("passer123");
 
         boolean rest1 = iRegistration.register(user);
@@ -31,6 +32,7 @@ public class TestLogin {
         owner.setAddress("Dakar");
         owner.setPhoneNumber("77 777 77 77");
         owner.setUsername("prorpiot1");
+        owner.setRole("Owner");
         owner.setPassword("passer123");
         boolean rest2 = iRegistration.register(owner);
         System.out.println(rest2);

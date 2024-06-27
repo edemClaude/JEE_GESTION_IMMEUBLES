@@ -1,6 +1,8 @@
 package dev.sn.gestionimmeubles.web;
 
+import dev.sn.gestionimmeubles.dao.IImmeuble;
 import dev.sn.gestionimmeubles.dao.IRegistration;
+import dev.sn.gestionimmeubles.dao.ImmeubleImpl;
 import dev.sn.gestionimmeubles.dao.RegistrationImpl;
 import dev.sn.gestionimmeubles.entities.Lodger;
 import dev.sn.gestionimmeubles.entities.User;
@@ -17,10 +19,12 @@ import java.io.IOException;
 public class LoginServlet extends HttpServlet {
 
     private IRegistration iregistration;
+    private IImmeuble iImmeuble;
 
     @Override
     public void init(ServletConfig config) throws ServletException {
         iregistration = new RegistrationImpl();
+        iImmeuble = new ImmeubleImpl();
     }
 
     @Override
@@ -50,6 +54,7 @@ public class LoginServlet extends HttpServlet {
 
         if (iregistration.login(username, password)) {
             req.getSession().setAttribute("username", username);
+            req.setAttribute("immeubles", iImmeuble.getAllImmeubleByMC("%%"));
             req.getRequestDispatcher("home.jsp").forward(req, resp);
         } else {
             req.setAttribute("error", "Invalid username or password");
@@ -75,6 +80,7 @@ public class LoginServlet extends HttpServlet {
 
             if (iregistration.register(user)) {
                 req.getSession().setAttribute("username", user.getUsername());
+                req.setAttribute("immeubles", iImmeuble.getAllImmeubleByMC("%%"));
                 req.getRequestDispatcher("home.jsp").forward(req, resp);
             }
         } else {

@@ -10,19 +10,19 @@ public class Person {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     @Column(name = "id")
-    protected int id;
+    private int id;
 
     @Column(name = "first_name")
-    protected String firstName;
+    private String firstName;
 
     @Column(name = "last_name")
-    protected String lastName;
+    private String lastName;
 
     @Column(name = "phone_number")
-    protected String phoneNumber;
+    private String phoneNumber;
 
     @Column(name = "address")
-    protected String address;
+    private String address;
 
     @Column(name = "username")
     private String username;
@@ -30,5 +30,7 @@ public class Person {
     @Column(name = "password")
     private String password;
 
+    @Column(name = "role")
+    private String role;
 
 }

@@ -22,4 +22,7 @@ public class Paiement {
     @JoinColumn(name = "contrat_id")
     private ContratLocation contrat;
 
+    @Column(name = "statut")
+    private boolean statut;
+
 }

@@ -15,7 +15,7 @@
 </head>
 <body class="text-center">
 
-<main class="form-signin w-25 m-auto mt-5">
+<main class="form-signin w-25 m-auto">
     <div class="card mt-5">
         <div class="card-body">
             <h3 class="mt-4 mb-2">Veuillez vous connecter</h3>

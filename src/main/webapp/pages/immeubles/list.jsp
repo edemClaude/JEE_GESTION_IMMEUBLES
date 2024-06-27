@@ -32,11 +32,16 @@
 
     <h1 class="mt-3">Accueil</h1>
     <p class="lead">Cette page affiche la liste des Immeubles</p>
+    <c:if test="${error != null}">
+        <div class="alert alert-danger" role="alert">
+                ${error}
+        </div>
+    </c:if>
 
     <div class="card mb-5">
         <div class="card-header">
             <div class="d-flex justify-content-between align-items-center">
-                <h5 class="card-title"></h5>
+                <h5 class="card-title">Lites de tous les immeubles</h5>
                 <a href="immeubles?action=add" class="btn btn-primary float-end">Ajouter un immeuble +</a>
             </div>
         </div>
@@ -57,19 +62,19 @@
                 </thead>
                 <tbody>
                 <c:forEach items="${immeubles}" var="i">
-                <tr>
-                    <td>${i.id}</td>
-                    <td>${i.name}</td>
-                    <td>${i.address}</td>
-                    <td>${i.city}</td>
-                    <td>${i.equipments}</td>
-                    <td>${i.description}</td>
-                    <td>${i.owner.lastName}</td>
-                    <td>
-                        <a href="immeubles?action=edit&id=${i.id}" class="btn btn-primary">Modifier</a>
-                        <a href="immeubles?action=delete&id=${i.id}" class="btn btn-danger">Supprimer</a>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>${i.id}</td>
+                        <td>${i.name}</td>
+                        <td>${i.address}</td>
+                        <td>${i.city}</td>
+                        <td>${i.equipments}</td>
+                        <td>${i.description}</td>
+                        <td>${i.owner.lastName}</td>
+                        <td>
+                            <a href="immeubles?action=edit&id=${i.id}" class="btn btn-primary">Modifier</a>
+                            <a href="immeubles?action=delete&id=${i.id}" class="btn btn-danger">Supprimer</a>
+                        </td>
+                    </tr>
                 </c:forEach>
                 </tbody>
             </table>
@@ -80,7 +85,7 @@
 </main>
 
 
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="../../js/bootstrap.bundle.min.js"></script>
 
 
 </body>
